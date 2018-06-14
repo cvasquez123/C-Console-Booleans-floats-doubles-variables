@@ -8,30 +8,35 @@ namespace hwthursday
         {
             addTwoWords("car", "vasquez");
             add(5, 4);
-            s
+            MyPrivateMethod();
+            string result = twoStrings("Car", "los");
           
         }
 
-        // Parameters
+        // 2 Parameters and public
         public static void addTwoWords(string word1, string word2)
         {
             Console.WriteLine(word1 + word2);
         }
 
-        // Public
+        // Private 
         private static void add(int num1, int num2)
         {
             Console.WriteLine(num1 + num2);
         }
 
-        private void MyPrivateMethod()
+        // Return 
+        public static  string twoStrings(String c, String d)
+        {
+            return c + d;
+        }
+
+
+        public static void MyPrivateMethod()
         {
             Console.WriteLine("This is my private method ");
         }
 
-        public void sampleMethod()
-        {
-            Console.WriteLine("This method is free for everybody to use");
-        }
+       
     }
 }
