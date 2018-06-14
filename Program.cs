@@ -1,57 +1,37 @@
 ﻿using System;
 
-namespace csTesting1
+namespace hwthursday
 {
     class Program
     {
-        private const double V = 22.3;
+        public static void Main(string[] args)
+        {
+            addTwoWords("car", "vasquez");
+            add(5, 4);
+            s
+          
+        }
 
-        static void Main(string[] args)
-        { 
-            string firstName = "carlos";
-            string lastName = "vasquez";
-            int age = 21;
-            double rating = 10.0;
-            bool feel = true;
+        // Parameters
+        public static void addTwoWords(string word1, string word2)
+        {
+            Console.WriteLine(word1 + word2);
+        }
 
-            
-            // Console is the class, writeline is the method
-            Console.WriteLine("Hello My name is {0} and my last name is {1}, I am {2} years old. In a rating scale I'm a {3}, this is so {4} ", firstName,lastName,age,rating,feel);
-            Console.ReadKey();
+        // Public
+        private static void add(int num1, int num2)
+        {
+            Console.WriteLine(num1 + num2);
+        }
 
-            string jokes = "Yo mama";
-            Console.WriteLine("Hello young sir, Welcome to {0}", jokes);
-            Console.ReadKey();
+        private void MyPrivateMethod()
+        {
+            Console.WriteLine("This is my private method ");
+        }
 
-            Console.Write("Please give us your mamas name: ");
-            string name = Console.ReadLine();
-            Console.WriteLine(name);
-            Console.ReadKey();
-
-            Console.WriteLine("Your mama {0}, is so ugly, she looking like a horse", name);
-            Console.ReadKey();
-
-            // Relational operators
-            Console.WriteLine(5 < 90);
-            Console.WriteLine("awsome" == "awsome");
-            Console.WriteLine("Cars" == "Motorcycle");
-            Console.WriteLine(10 > 5);
-            Console.WriteLine("robot" != "human"); //this is true, been does not equal william
-
-            
-
-
-
-
-            
-            
-
-            
-
-     
-
-
-            
+        public void sampleMethod()
+        {
+            Console.WriteLine("This method is free for everybody to use");
         }
     }
 }
