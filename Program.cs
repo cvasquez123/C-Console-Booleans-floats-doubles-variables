@@ -10,6 +10,7 @@ namespace hwthursday
             add(5, 4);
             MyPrivateMethod();
             string result = twoStrings("Car", "los");
+            Console.WriteLine(result);
           
         }
 
